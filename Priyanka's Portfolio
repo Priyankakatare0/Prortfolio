@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka - Developer Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(0, 0, 33);
+            color: white;
+            font-family: sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            color: rgb(153, 153, 226);
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .btn {
+            padding: 10px;
+            background-color: #1e2167;
+            border: 2px solid white;
+            font-size: 18px;
+            cursor: pointer;
+            color: white;
+            border-radius: 6px;
+        }
+
+        .leftSection .buttons {
+            padding: 50px;
+        }
+
+        .rightSection img {
+            width: 120%;
+            height: 290px;
+
+        }
+
+        .purple {
+            color: rgb(167, 92, 237);
+        }
+
+        .text-grey {
+            color: rgb(162, 159, 159);
+        }
+
+        #element {
+            color: rgb(167, 92, 237);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            height: 70vh;
+            margin: auto;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -39px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 16px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        /* CSS for Education and Skills Sections */
+        .educationSection,
+        .skillsSection {
+            max-width: 80vw;
+            margin: 50px auto;
+            color: white;
+        }
+
+        .educationSection h1,
+        .skillsSection h1 {
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+        }
+
+        .educationSection ul,
+        .skillsSection ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .educationSection ul li,
+        .skillsSection ul li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .educationSection ul li::before,
+        .skillsSection ul li::before {
+            content: "•";
+            color: rgb(167, 92, 237);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .educationSection ul li strong,
+        .skillsSection ul li strong {
+            color: white;
+        }
+
+        /* CSS for Certifications Section */
+        .certificationsSection {
+            max-width: 80vw;
+            margin: 50px auto;
+            color: white;
+        }
+
+        .certificationsSection h1 {
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+        }
+
+        .certificationsSection ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .certificationsSection ul li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .certificationsSection ul li::before {
+            content: "•";
+            color: rgb(167, 92, 237);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Priyanka's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Priyanka Katare</span>
+                <div> and I am a passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="coder.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I haave done so far</span>
+            <h1> Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Daco_4866189.png" alt=""
+                        style="position: relative; left: -9px; top: -29px; width: 40px;">
+
+                    <div class="vertical-title">
+                        BTS Music Band
+                    </div>
+                    <div class="vertical-desc">
+
+                        A BTS-themed website highlighting the band's members, top songs, achievements, global influence,
+                        cultural impact, and economic contributions.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pngegg.png" alt="">
+                    <div class="vertical-title">
+                        Rock, Paper, Scissors Game
+                    </div>
+                    <div class="vertical-desc">
+
+                        This JavaScript code plays Rock, Paper, Scissors, comparing player and computer choices to
+                        determine the winner.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pngwing.com.png" alt="">
+                    <div class="vertical-title">
+                        Sudoku Game
+                    </div>
+                    <div class="vertical-desc">
+                        This C++ program solves Sudoku puzzles using backtracking and recursion, ensuring all board
+                        rules are followed for valid solutions.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="Daco_4866189.png" alt=""
+                        style="position: relative; left: -9px; top: -29px; width: 40px;">
+                    <div class="vertical-title">
+                        Amazon Clone
+                    </div>
+                    <div class="vertical-desc">
+
+                        An Amazon clone built with HTML and CSS, replicating the e-commerce site's layout, design, and
+                        responsive user interface.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="educationSection">
+            <h1>Education</h1>
+            <ul>
+                <li><strong>Bachelor of Computer Applications (BCA)</strong> - Amity University, 2023 -2026</li>
+                <li><strong>Higher Secondary Education</strong> - GSKV School, 2023</li>
+                <!-- Add more educational qualifications here if needed -->
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- New Skills Section -->
+        <section class="skillsSection">
+            <h1>Skills</h1>
+            <ul>
+                <li>Proficient in C, C++, HTML, and CSS</li>
+                <li>Understanding of responsive web design principles</li>
+                <li>Familiarity with JavaScript for simple web interactions</li>
+                <li>Knowledge of algorithms and data structures and Algorithms</li>
+                <li>Familiar with backtracking and recursion techniques</li>
+
+                <!-- Add more skills here if needed -->
+            </ul>
+        </section>
+        <hr>
+        <section class="certificationsSection">
+            <h1>Certifications</h1>
+            <ul>
+                <li>C++ Programming by CodeChef</li>
+                <li>C Programming by Data Flair</li>
+                <li>Array and Linked List by CodeChef</li>
+                <li>AI Essentials by Microsoft LinkedIn Learning</li>
+                <li>Data Job Simulation by Forage & Quantium</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Priyanka's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Skills</li>
+                    <li>Experience</li>
+                    <li>Education</li>
+                    <li>Certifications</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Portfolio</li>
+                    <li>Achievements</li>
+                    <li>Interests</li>
+                    <li>Download Resume</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; priyankasportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'software Engineer', 'Photographer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
