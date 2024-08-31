@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanka - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
+
     <style>
         * {
             margin: 0;
@@ -246,6 +248,49 @@
             width: 1em;
             margin-left: -1em;
         }
+
+        /* CSS for Contact Me Section */
+        .contactSection {
+            max-width: 80vw;
+            margin: 50px auto;
+            color: white;
+        }
+
+        .contactSection h1 {
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+        }
+
+        .contactSection p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: rgb(162, 159, 159);
+        }
+
+        .contactSection ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .contactSection ul li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .contactSection ul li strong {
+            color: white;
+        }
+
+        .contactSection ul li a {
+            color: rgb(167, 92, 237);
+            text-decoration: none;
+        }
+
+        .contactSection ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -369,6 +414,36 @@
                 <li>Data Job Simulation by Forage & Quantium</li>
             </ul>
         </section>
+        <hr>
+        <section class="contactSection">
+            <h1>Contact Me</h1>
+            <p>If you'd like to get in touch, feel free to reach out through any of the platforms below:</p>
+            <ul>
+                <li>
+                    <i class="fas fa-envelope"></i> Email:
+                    <a href="mailto:priyanka@example.com" target="_blank"
+                        style="color: rgb(167, 92, 237);">priyanka.katare2129@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"></i> LinkedIn:
+                    <a href="https://www.linkedin.com/in/priyanka-katare-67b455274" target="_blank"
+                        style="color: rgb(167, 92, 237);">linkedin.com/in/priyanka</a>
+                </li>
+                <li>
+                    <i class="fab fa-github"></i> GitHub:
+                    <a href="https://github.com/Priyankakatare0" target="_blank"
+                        style="color: rgb(167, 92, 237);">github.com/Priyankakatare0</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i> Instagram:
+                    <a href="https://www.instagram.com/priyankakatare81" target="_blank"
+                        style="color: rgb(167, 92, 237);">priyankakatare81</a>
+                </li>
+            </ul>
+
+
+
+
 
     </main>
     <footer>
